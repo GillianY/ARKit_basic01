@@ -26,6 +26,12 @@
 		ADB7EE4E1FC6B97D007D7911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB7EE501FC6B97D007D7911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB7EE561FC6BEE1007D7911 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		ADB7EE591FC6CC4F007D7911 /* m51.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m51.jpg; sourceTree = "<group>"; };
+		ADB7EE5A1FC6CC59007D7911 /* m55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m55.jpg; sourceTree = "<group>"; };
+		ADB7EE5B1FC6CC66007D7911 /* m66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m66.jpg; sourceTree = "<group>"; };
+		ADB7EE5C1FC6CD7C007D7911 /* Earth01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth01.jpg; sourceTree = "<group>"; };
+		ADB7EE5D1FC6CE9B007D7911 /* Brick-2377.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brick-2377.jpg"; sourceTree = "<group>"; };
+		ADB7EE5E1FC6CEA7007D7911 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		ADB7EE411FC6B97D007D7911 /* AR_basic01 */ = {
 			isa = PBXGroup;
 			children = (
+				ADB7EE581FC6CA75007D7911 /* materials */,
 				ADB7EE421FC6B97D007D7911 /* AppDelegate.swift */,
 				ADB7EE441FC6B97D007D7911 /* art.scnassets */,
 				ADB7EE461FC6B97D007D7911 /* ViewController.swift */,
@@ -68,6 +75,19 @@
 				ADB7EE561FC6BEE1007D7911 /* TextViewController.swift */,
 			);
 			path = AR_basic01;
+			sourceTree = "<group>";
+		};
+		ADB7EE581FC6CA75007D7911 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				ADB7EE5C1FC6CD7C007D7911 /* Earth01.jpg */,
+				ADB7EE5E1FC6CEA7007D7911 /* earth.jpg */,
+				ADB7EE5B1FC6CC66007D7911 /* m66.jpg */,
+				ADB7EE5A1FC6CC59007D7911 /* m55.jpg */,
+				ADB7EE5D1FC6CE9B007D7911 /* Brick-2377.jpg */,
+				ADB7EE591FC6CC4F007D7911 /* m51.jpg */,
+			);
+			path = materials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
