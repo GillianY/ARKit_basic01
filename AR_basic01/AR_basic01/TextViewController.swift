@@ -10,8 +10,8 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
-
+class TextViewController: UIViewController, ARSCNViewDelegate {
+    
     var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -29,16 +29,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a new scene
         let scene = SCNScene()
         
-        let box = SCNBox(width: 0.2, height: 0.2, length: 0.2, chamferRadius: 0);
-        let material = SCNMaterial();
-        material.diffuse.contents = UIColor.blue;
+        let textGeometry  = SCNText(string: "Hello World", extrusionDepth: 1.0);
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.black;
         
-        let node = SCNNode();
-        node.geometry = box;
-        node.geometry?.materials = [material];
-        node.position = SCNVector3(0 , 0.1, -0.5);
+        let txtNode = SCNNode(geometry: textGeometry);
+        txtNode.position = SCNVector3(0 , 0.1, -0.5);
+        txtNode.scale = SCNVector3( 0.2,0.2,0.2);
         
-        scene.rootNode.addChildNode(node);
+        scene.rootNode.addChildNode(txtNode);
         
         
         
@@ -52,7 +50,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -68,17 +66,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
+    /*
+     // Override to create and configure nodes for anchors added to the view's session.
+     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+     let node = SCNNode()
      
-        return node
-    }
-*/
+     return node
+     }
+     */
     
-
+    
 }
+
